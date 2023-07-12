@@ -48,6 +48,7 @@ try:
         file.write(page.content)
     print("Finished.")
     print("Saved to " + downloadPath)
+    print("Press ENTER to exit...")
 
 except ValueError as e:
     print(e)
