@@ -52,10 +52,13 @@ try:
 
 except ValueError as e:
     print(e)
+    input("Press ENTER to exit...")
 except HTTPError as e:
     if e.code == 404:
         print("Error: url '" + e.url + "' not found.")
     else:
         print(e.code + " Error. Could not get driver.")
+    input("Press ENTER to exit...")
 except Exception as e:
     print(e)
+    input("Press ENTER to exit...")
